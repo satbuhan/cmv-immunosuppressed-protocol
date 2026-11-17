@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ganciclovir and Valganciclovir for CMV in Immunosuppressed Patients</title>
+<meta name="description" content="An interactive, referenced walkthrough of the decision algorithm for ganciclovir and valganciclovir use in CMV infection and disease in immunosuppressed patients — serostatus/organ-stratified prevention across SOT and HCT recipients, severity-led IV-versus-oral treatment selection, and the weekly monitoring, neutropenia and resistance checkpoints that run alongside treatment.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css?v=1">
+<link rel="stylesheet" href="https://satbuhan.github.io/clinical-algorithm-atlas/assets/chat-widget.css?v=2">
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+</head>
+<body>
+
+<header class="masthead">
+  <h1>Ganciclovir and Valganciclovir for CMV Infection in Immunosuppressed Patients</h1>
+  <p class="masthead__byline">
+    <strong>Dr. Özgür Karcıoğlu</strong> &amp; <strong>Dr. Satuk Buğra Han Bozatlı</strong>
+    &nbsp;— select any box below to read the reasoning and sources behind that step.
+  </p>
+  <p class="masthead__disclaimer">
+    Educational / academic reference tool, not a substitute for institutional protocol or
+    clinical judgement at the bedside. This algorithm applies to immunosuppressed patients
+    (solid organ transplant and haematopoietic cell transplant recipients, people with
+    advanced HIV, haematological malignancy, or other causes of impaired cell-mediated
+    immunity) at risk of, or with, cytomegalovirus infection or disease; it should not be
+    extrapolated to immunocompetent patients. This tool's reference list is reproduced
+    directly from the source manuscript's own bibliography and was not independently
+    re-verified against primary sources for this build — verification is deferred to the
+    author team's own clinician review. See the References section and METHODOLOGY.md for
+    details.
+  </p>
+</header>
+
+<main>
+  <div class="workstation">
+    <section class="scope" aria-label="Interactive flowchart">
+      <p class="scope__hint">Scroll sideways and pinch to zoom — this is the full diagram, same as on desktop.</p>
+      <div class="flow" id="flow">
+        <svg class="edges" id="edges" aria-hidden="true"></svg>
+        <!-- nodes are rendered here by app.js from content.js -->
+      </div>
+    </section>
+
+    <aside class="readout" id="readout" aria-live="polite">
+      <button class="readout__close" id="readoutClose" type="button">Close ✕</button>
+      <div class="readout__idle" id="readoutIdle">
+        Select any box in the diagram to see what it means, why the algorithm
+        calls for it, and the sources behind it.
+      </div>
+      <div id="readoutContent" hidden></div>
+    </aside>
+  </div>
+
+  <div class="scope-backdrop" id="backdrop"></div>
+
+  <section class="references" aria-label="References">
+    <details id="references">
+      <summary>References <span class="count" id="refCount"></span></summary>
+      <ol id="referencesList"></ol>
+    </details>
+  </section>
+
+  <p class="abbrev-note">
+    SOT, solid organ transplantation; HCT, haematopoietic cell transplantation; D/R,
+    donor/recipient CMV serostatus; CMI, cell-mediated immunity; ANC, absolute neutrophil
+    count; ART, antiretroviral therapy; G-CSF, granulocyte colony-stimulating factor; VGC,
+    valganciclovir; GCV, ganciclovir; (V)GC, (val)ganciclovir; UL97/UL54, the CMV genes most
+    often mutated in drug resistance; PCR, polymerase chain reaction; DNAemia, detectable
+    CMV DNA in blood; GRADE, the certainty-of-evidence framework used throughout; MCID,
+    minimal clinically important difference.
+  </p>
+</main>
+
+<footer class="site">
+  <a href="https://satbuhan.github.io/clinical-algorithm-atlas/" target="_blank" rel="noopener">← Clinical Algorithm Atlas</a>
+  <span>Built as a companion to the other protocols, same methodology.</span>
+  <a href="https://github.com/satbuhan" target="_blank" rel="noopener">github.com/satbuhan</a>
+  <a href="https://github.com/satbuhan/cmv-immunosuppressed-protocol/issues/new" target="_blank" rel="noopener">Report an issue</a>
+  <span>CC BY-NC-SA 4.0</span>
+</footer>
+
+<script src="assets/content.js?v=1"></script>
+<script src="assets/app.js?v=1"></script>
+<script defer src="https://satbuhan.github.io/clinical-algorithm-atlas/assets/chat-widget.js?v=2"></script>
+</body>
+</html>
